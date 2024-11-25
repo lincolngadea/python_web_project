@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos</title>
 </head>
-<body>
+<body onload="load()">
   <!-- onChange
   onClick
   onLoad
@@ -14,8 +14,10 @@
   onMouseOut
   onSubmit -->
 
-  <input onchange="change()" type="text" id="ip">
-  <button onclick="clicar()">Enviar</button>
+  <!-- <input onchange="change()" type="text" id="ip">
+  <button onclick="clicar()">Enviar</button> -->
+
+  <img src="" alt="Praia" id="img">
   <script>
     function change(){
       alert("Algo mudou")
@@ -23,6 +25,10 @@
 
     function clicar(){
       alert(document.getElementById("ip").value)
+    }
+
+    function load(){
+      document.getElementById("img").src="https://www.melhoresdestinos.com.br/wp-content/uploads/2020/06/praias-brasil-sancho.jpg"
     }
   </script>
 </body>
