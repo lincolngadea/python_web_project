@@ -17,7 +17,7 @@
   <!-- <input onchange="change()" type="text" id="ip">
   <button onclick="clicar()">Enviar</button> -->
 
-  <img src="" alt="Praia" id="img">
+  <img onMouseOver="over()" onMouseOut="out()" src="" alt="Praia" id="img">
   <script>
     function change(){
       alert("Algo mudou")
@@ -28,6 +28,14 @@
     }
 
     function load(){
+      document.getElementById("img").src="https://www.melhoresdestinos.com.br/wp-content/uploads/2020/06/praias-brasil-sancho.jpg"
+    }
+
+    function over(){
+      document.getElementById("img").src="https://static.ndmais.com.br/2023/12/praia-tropical-com-areia-branca-scaled.jpg"
+    }
+
+    function out(){
       document.getElementById("img").src="https://www.melhoresdestinos.com.br/wp-content/uploads/2020/06/praias-brasil-sancho.jpg"
     }
   </script>
