@@ -17,7 +17,13 @@
   <!-- <input onchange="change()" type="text" id="ip">
   <button onclick="clicar()">Enviar</button> -->
 
-  <img onMouseOver="over()" onMouseOut="out()" src="" alt="Praia" id="img">
+  <!-- <img onMouseOver="over()" onMouseOut="out()" src="" alt="Praia" id="img"> -->
+
+  <form onSubmit="sub()">
+    <input type="text" id="ident">
+    <input type="submit">
+  </form>
+  
   <script>
     function change(){
       alert("Algo mudou")
@@ -37,6 +43,10 @@
 
     function out(){
       document.getElementById("img").src="https://www.melhoresdestinos.com.br/wp-content/uploads/2020/06/praias-brasil-sancho.jpg"
+    }
+
+    function sub(){
+      alert(document.getElementById("ident").value)
     }
   </script>
 </body>
